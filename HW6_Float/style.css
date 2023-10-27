@@ -1,0 +1,61 @@
+.gallery li 
+{
+  float: left;
+  width: auto;
+  list-style: none;
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 10px;
+}
+.gallery img
+{
+  width: 140px;
+  height: auto;
+}
+.gallery p
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+}
+.gallery h1
+{
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.gallery-under
+{
+  clear: both;
+}
+
+/* task2 */
+.menu
+{
+  color: blue;
+}
+.menu li
+{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+  height: 50px;
+  font-size: 15px;
+  padding-top: 27px;
+  padding-left: 81px;
+
+  width: 200px;
+  list-style: none;
+
+  background-repeat: no-repeat;
+	background-position: 10px ;
+	background-size: 55px;
+  background-color: grey;
+}
+.menu li:hover
+{
+  background-color: rgb(99, 99, 99);
+}
