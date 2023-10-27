@@ -1,0 +1,88 @@
+*
+{
+    margin: 0;
+	scroll-behavior: smooth;
+}
+/* task 1 */
+
+.div-main_t1
+{
+	background-color: rgb(241, 241, 241);
+	width: 1200px;
+	margin: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+}
+.div-main_t1 h1, h2, h3
+{
+	font-weight: bold;
+	padding-bottom: 10px;
+	padding-top: 20px;
+
+}
+.div-main_t1 ol
+{
+	list-style-position: inside;
+}
+.div-main_t1 .list
+{
+	width: 350px;
+	height: auto;
+	background-color: rgb(228, 228, 228);
+	border: 3px solid rgb(185, 185, 185);
+	border-radius: 3px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.div-main_t1 p, hr
+{
+	margin-bottom: 10px;
+}
+.div-main_t1 .listname
+{
+	font-weight: bold;
+	font-size: larger;
+	text-align: center;
+}
+
+
+/* task 2 */
+.div-main_t2
+{
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+	text-align: center;
+}
+.div-main_t2 .frame
+{
+    height: 300px;
+    width: 354px;
+	padding-left: 70px;
+	padding-top: 20px;
+    border: 1px solid grey;
+} 
+.div-main_t2 .block
+{
+	margin: 2px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid grey;
+	padding-top: 6PX;
+}
+.div-main_t2 .row
+{
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+} 
+.div-main_t2 h1
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
