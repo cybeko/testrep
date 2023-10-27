@@ -1,0 +1,77 @@
+/* task1 */
+.table1-class
+{
+    border:1px solid black;
+    border-spacing: 2px;
+    width:700px;
+    height: 300px;
+}
+.table1-class td 
+{
+    padding:8px;
+    border: 1px solid black;
+}
+/* task 2 */
+.table2-class
+{
+    width: 500px;
+    margin: 0 auto;
+    border-spacing: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.table2-class td
+{
+    border: 1px solid rgb(214, 214, 214);
+    padding: 8px;
+    text-align: center;
+}
+.table2-class thead
+{
+    background-color: rgb(8, 165, 144);
+    color: white;
+    font-size: 16px;
+    height: 35px;
+    border: none;
+}
+.table2-class .greycell
+{
+    background-color: rgb(238, 238, 238);
+    color: rgb(8, 165, 144);
+}
+.div-decor
+{
+    background-color:rgb(8, 165, 144); 
+    width: 500px; 
+    margin: 0 auto;
+    height: 3px;
+}
+/* task 3 */
+.table3-class
+{
+    width: 900px;
+    height: 250px;
+    margin: 0 auto;
+    border-spacing: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.table3-class td
+{
+    padding: 10px;
+    text-align: center;
+}
+.table3-class thead
+{
+    background-color: black;
+    color: white;
+    height: 35px;
+}
+.table3-class .row-light
+{
+    background-color: rgb(255, 233, 109);
+}
+.table3-class .row-dark
+{
+    background-color: gold;
+}
