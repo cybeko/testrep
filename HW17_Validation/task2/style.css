@@ -1,0 +1,92 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+h2
+{
+    margin-bottom: 1%;
+}
+.box
+{
+    width: 25%;
+    background-color: rgb(152, 185, 89);
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1vh;
+}
+.main-section
+{
+    padding-bottom: 3%;
+
+}
+.select-section
+{
+    background-color: rgb(199, 224, 153);
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 1%;
+
+}
+    .select-section label
+    {
+        width: 20%;
+    }
+    .select-section .selection-row
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+.input-section
+{
+    background-color: rgb(199, 224, 153);
+    border: 1px solid white;
+    padding: 16px;
+    border-radius: 5px;
+    display: flex;
+    font-size: 1.1em;
+    margin-bottom: 1%;
+
+}
+    .input-section label
+    {
+        width: 30%;
+    }
+    .input-section input
+    {
+        width: 50%;
+    }
+    .input-section textarea
+    {
+        height: 10vh;
+        width: 50%;
+
+    }
+.button
+{
+    margin: auto;
+    width: 25%;
+    height: 100%;
+    border: none;
+    border-radius: 100vh;
+    background-color: rgb(68, 95, 32);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+.button:hover
+{
+    background-color: rgb(50, 71, 21);
+
+}

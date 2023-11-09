@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form method="get">
+        <div class="container">
+            <div class="card">
+                <div class="section-left">
+                    <div class="img-frame">
+                        <img src="businesswoman.png" alt="">
+                    </div>
+                </div>
+                <div class="section-right">
+
+                    <div class="input-section">
+                        <label for="name">Имя:</label>
+                        <input type="text" pattern="[A-Za-z]+" id="name"name="name_id" />
+                    </div>
+
+                    <div class="select-section">
+                        <label style="display: inline;">Gender:</label>
+
+                        <p>Male 
+                            <input type="radio" name="gender" value="male" checked/>
+                        </p>
+                        <p>Female 
+                            <input type="radio" name="gender" value="female"/>
+                        </p>            
+                    </div>
+
+                    <div class="input-section">
+                        <label for="email">Email:</label>
+                        <input type="email" pattern="^\S{5,}@\D{3,5}\.\D{2,5}$" id="email_id"name="email" />
+                    </div>
+
+                    <div class="input-section">
+                        <label for="phone">Страна:</label>
+                        <select name="City" size="1" >
+                            <option value='' selected>Выберите страну</option>
+                            <option value='uk'>Украина</option>
+                            <option value='pl'>Польша</option>
+                            <option value='fn'>Финляндия</option>
+                            <option value='sw'>Швеция</option>
+                        </select>
+                    </div>
+                    <div class="input-section">
+                        <input type="submit" value="Отправить" class="button"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form> 
+</body>
+</html>
