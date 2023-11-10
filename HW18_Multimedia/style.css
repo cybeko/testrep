@@ -1,0 +1,280 @@
+*
+{
+    padding: 0;
+    margin: 0;
+
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body
+{
+    background-color: rgb(20, 20, 20);
+}
+.container
+{
+    width: 100vw;
+    min-width: 320px;
+    max-width: 1600px;
+    margin: auto;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+h1
+{
+    font-size: 1.8em;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    color: white;
+}
+
+main
+{
+    flex: 1 1 auto;
+    display: flex;
+}
+main aside
+{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    padding-left: 0;
+}
+    .video-block-small
+    {
+        width: 100%;
+        height: 13vh;
+        margin-bottom: 1vh;
+        display: flex;
+    }
+    .video-block-small .video-section
+    {
+        width: 50%;
+        border-radius: 10px;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .video-block-small .text-section
+    {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 1vh;
+        color: white;
+    }
+        .video-block-small .text-section h3
+        {
+            padding-bottom: 0.6vh;
+        }
+        .video-block-small .text-section p
+        {
+            color: gray;
+            font-size: 1.1em;
+
+        }
+        .video-block-small .text-section span
+        {
+            color: rgb(0, 173, 0);
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 0.1vh;
+            width: 10vh;
+            text-align: center;
+            padding-right: 0.5vh;
+            padding-left: 0.5vh;
+            border-radius: 0.2vh;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+    
+main section
+{
+    flex: 1 1 auto;
+    padding: 2vh;
+}
+    main section .main-video
+    {
+        width: 100%;
+        height: 65vh;
+        border-radius: 2vh;
+        overflow: hidden;
+    }
+    
+.row-info
+{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    margin-bottom: 1vh;
+
+}
+    .row-info .left-section
+    {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        
+    }
+        .row-info .left-section .pfp
+        {
+
+            height: 100%;
+            border-radius: 100vh;
+            display: flex;
+            overflow: hidden;
+            margin-right: 0.5vw;
+        }
+        .row-info .left-section .channel-info
+        {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 0.5vw;
+            color: white;
+        }
+        .row-info .left-section .channel-info p
+        {
+            color: gray;
+        }
+       
+        .row-info .left-section .button
+        {
+            width: 12vh;
+            height: 80%;
+            background-color: white;
+            border-radius: 100vh;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+    .row-info .right-section
+    {
+        width: 50%;
+        height: 100%;
+   
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+        .row-info .right-section .reaction
+        {
+            width: 18vh;
+            height: 80%;
+            background-color: rgb(59, 59, 59);
+            border-radius: 100vh;
+            overflow: hidden;
+            display: flex;
+            margin-right: 1vh;
+        }
+            .reaction .like-section
+            {
+                width: 60%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.1em;
+                font-weight: bold;
+                color: white;
+                border-right: 2px solid rgb(80, 80, 80);
+            }
+                .reaction .like-section img
+                {
+                    width: 20px;
+                    margin-right: 0.3vw;
+                }
+            .reaction .dislike-section
+            {
+                width: 40%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.1em;
+                font-weight: bold;
+            }
+            .reaction .dislike-section img
+            {
+                width: 20px;
+                transform: rotate(180deg);
+            }
+        .row-info .right-section .share
+        {
+            width: 15vh;
+            height: 80%;
+            background-color:rgb(59, 59, 59);
+            border-radius: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: white;
+        }
+            .share img
+            {
+                width: 25px;
+                margin-right: 0.3vw;
+            }
+        
+.video-info
+{
+    background-color: rgb(59, 59, 59);
+    width: 100%;
+    border-radius: 1vh;
+    padding: 10px;
+    overflow: auto;
+    color: white;
+}
+main section+aside
+{
+    flex-basis: 65%;
+}
+footer{
+    background-color: gray;
+    flex-basis: 5vh;
+}
+hr
+{
+    margin-top: 1.2vh;
+    margin-bottom: 1.2vh;
+    border: 1px solid grey;
+
+}
+table, td, th 
+{
+    height: 40px;
+}
+table 
+{
+    width: 30vw;
+    border-collapse: collapse;
+    text-align: left;
+    color: grey;
+
+}
+    td:nth-child(2)
+    {
+        font-weight: bold;
+        color: white;
+    }
+
+@media screen and (max-width:960px)
+{
+    main>section+aside
+    {
+        display: none;
+    }
+}
