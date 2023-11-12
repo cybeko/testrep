@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <form action="order.html" method="get">
+    <div class="container">
+        <main>
+            <section>
+                <div class="block">
+                    <h1>Оформить заказ</h1>
+                    <h2>Платёжные данные</h2>
+
+                    <div class="option">
+                        <label>Имя</label>
+                        <input type="text" name="name" placeholder="Имя Фамилия" pattern="[А-Яа-яЁё]+ [А-Яа-яЁё]+" maxlength="30"/>
+                    </div>
+                    <div class="option">
+                        <label>Адрес</label>
+                        <input type="text" name="address" maxlength="50"/>
+                    </div>
+                    <div class="option">
+                        <label>Телефон</label>
+                        <input type="text" placeholder="+380960472951" pattern="\+\d{1,}(\d{1,})?" name="phone" maxlength="50"/>
+                    </div>
+                    <div class="option">
+                        <label>Почта</label>
+                        <input type="text" placeholder="email.@gmail.com" pattern="^\S{5,}@\D{3,5}\.\D{2,5}$" name="email" maxlength="50"/>
+                    </div>
+
+                    <h2>Ваш заказ</h2>
+                    <div class="option">
+                        <label>Количество палочек:</label>
+                        <input type="number"/>
+                    </div>
+                    <div class="option">
+                        <label for="">Вид палочек:</label>
+                        <select name="City" size="1">
+                            <optgroup label="Вид палочек">
+                                <option value='od' selected>Обычные</option>
+                                <option value='tc'>Учебные</option>
+                                <option value='mg'>Волшебные</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="option-checkbox">
+                        <label for=""><p>Салфетки:</p>
+                        <input type="checkbox" name="news" value="true"/>
+                    </label>
+                    </div>
+
+                    <div class="sushi-row">
+                        <div class="sushi-block">
+                            <div class="text-section">
+                                <p>Калифорния</p>
+                            </div>
+                            <div class="image-section">
+                                <img src="img/im1.jpg" alt="">
+                            </div>
+                            <div class="input-section">
+                                <input type="number" value="1"/>
+                            </div>
+                        </div>
+
+                        <div class="sushi-block">
+                            <div class="text-section">
+                                <p>Унаги</p>
+                            </div>
+                            <div class="image-section">
+                                <img src="img/im2.jpg" alt="">
+                            </div>
+                            <div class="input-section">
+                                <input type="number" value="1"/>
+                            </div>
+                        </div>
+                        <div class="sushi-block">
+                            <div class="text-section">
+                                <p>Вулкан</p>
+                            </div>
+                            <div class="image-section">
+                                <img src="img/im3.jpg" alt="">
+                            </div>
+                            <div class="input-section">
+                                <input type="number" value="1"/>
+                            </div>
+                        </div>
+                        <div class="sushi-block">
+                            <div class="text-section">
+                                <p>Филадельфия</p>
+                            </div>
+                            <div class="image-section">
+                                <img src="img/im4.jpg" alt="">
+                            </div>
+                            <div class="input-section">
+                                <input type="number" value="1"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <label for="">Дополнительно:</label>
+
+                        <textarea name="comment" minlength="2" maxlength="1024" class="comment"></textarea>
+                    </div>
+                    <div >
+                        <input type="submit" value="Оформить заказ" class="button"/>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    </form>
+
+</body>
+</html>

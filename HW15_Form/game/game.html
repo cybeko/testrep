@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <form action="game.html" method="get">
+        <div class="container">
+            <main>
+                <section>
+                    <div class="block">
+                        <h1>Create an account</h1>
+                        <div class="option">
+                            <label>Nickname</label>
+                            <input type="text" name="name" pattern="^\S+$" maxlength="30"/>
+                        </div>
+                        <div class="option">
+                            <label>Email</label>
+                            <input type="text" placeholder="email.@gmail.com" pattern="^\S{5,}@\D{3,5}\.\D{2,5}$" name="email" maxlength="50"/>
+                        </div>
+                        <div class="option">
+                            <label>Experience:</label>
+                            <input type="number" max="60" min="1"/>
+                        </div>
+                        <div class="option">
+                            <label>Date:</label>
+                            <input type="date"/>
+                        </div>
+                        <div  class="option-gender">
+                            <label for="">Gender:</label>
+                            <p>Male
+                                <input type="radio" name="gender" value="male" /></p>
+                            <p>Female
+                                <input type="radio" name="gender" value="female"/></p>
+                        </div>
+                        <div class="option">
+                            <label>Country:</label>
+                            <input list="country" name="country">
+                            <datalist id="country">
+                                <option value="Ukraine">
+                                <option value="Sweden">
+                                <option value="Germany">
+                                <option value="Poland">
+                                <option value="Finland">
+                            </datalist>
+                        </div>
+                        <h3>Choose your class:</h3>
+                        <div class="row">
+                            <div class="row-block">
+                                <input type="radio" name="class" value="rogue"/>
+                                <div class="class">
+                                    <div class="img-section">
+                                        <img src="img/rogue.png" alt="">
+                                    </div>
+                                    <div class="text-section">
+                                        <p>Rogue</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row-block">
+                                <input type="radio" name="class" value="rogue"/>
+                                <div class="class">
+                                    <div class="img-section">
+                                        <img src="img/Sorcerer_Class_Icon.png" alt="">
+                                    </div>
+                                    <div class="text-section">
+                                        <p>Sorcerer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-block">
+                                <input type="radio" name="class" value="warlock"/>
+                                <div class="class">
+                                    <div class="img-section">
+                                        <img src="img/Class_Warlock_Badge_Icon.png" alt="">
+                                    </div>
+                                    <div class="text-section">
+                                        <p>Warlock</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-block">
+                                <input type="radio" name="class" value="wizard"/>
+                                <div class="class">
+                                    <div class="img-section">
+                                        <img src="img/160px-Class_Wizard_Badge_Icon.png" alt="">
+                                    </div>
+                                    <div class="text-section">
+                                        <p>Wizard</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row2 -->
+                        <div class="row">
+                            <div class="row-block">
+                                <input type="radio" name="class" value="cleric"/>
+                                <div class="class">
+                                    <div class="img-section">
+                                        <img src="img/Class_Cleric_Badge_Icon.png" alt="">
+                                    </div>
+                                    <div class="text-section">
+                                        <p>Cleric</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row-block">
+                                <input type="radio" name="class" value="druid"/>
+                                <div class="class">
+                                    <div class="img-section">
+                                        <img src="img/Class_Druid_Badge_Icon.png" alt="">
+                                    </div>
+                                    <div class="text-section">
+                                        <p>Druid</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-block">
+                                <input type="radio" name="class" value="monk"/>
+                                <div class="class">
+                                    <div class="img-section">
+                                        <img src="img/Class_Monk_Badge_Icon.png" alt="">
+                                    </div>
+                                    <div class="text-section">
+                                        <p>Monk</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-block">
+                                <input type="radio" name="class" value="ranger"/>
+                                <div class="class">
+                                    <div class="img-section">
+                                        <img src="img/Class_Ranger_Badge_Icon.png" alt="">
+                                    </div>
+                                    <div class="text-section">
+                                        <p>Ranger</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+                        <div>
+                            <input type="submit" value="Continue" class="button"/>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        </form>
+</body>
+</html>
