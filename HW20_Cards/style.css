@@ -1,0 +1,144 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container
+{
+    width: 100vw;
+    min-width: 320px;
+    max-width: 1300px;
+    margin: auto;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.row
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.outer-block
+{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.block
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    justify-content: space-evenly;
+    background-color: white;
+    transition: width 1s ease,  height 01s ease;
+    border-radius: 1vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+    h2
+    {
+        text-transform: uppercase;
+    }
+    .block hr
+    {
+        width: 100%;
+        border: 2px solid red;
+    }
+    .block:hover
+    {
+        width: 100%;
+        height: 100%;
+    }
+    .block h1
+    {
+        font-size: 3em;
+    }
+    .block .grey-text
+    {
+        color: grey;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    .block p
+    {
+        color: black;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    .block .button
+    {
+        background-color: #04AA6D;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 1.5em;
+        padding: 0.5vw 2vw;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+.red-block
+{
+    border: none;
+}
+    .red-block .button
+    {
+        background-color: rgb(204, 26, 62);
+    }
+    .red-block hr
+    {
+        border: 2px solid rgb(204, 26, 62);
+    }
+
+
+.yellow-block
+{
+    border: none;
+}
+    .yellow-block .button
+    {
+        background-color: #daa520;
+    }
+    .yellow-block hr
+    {
+        border: 2px solid #daa520;
+    }
+
+.blue-block
+{
+    border: none;
+}
+    .blue-block .button
+    {
+        background-color: rgb(58, 114, 167);
+    }
+    .blue-block hr
+    {
+        border: 2px solid rgb(58, 114, 167);
+    }
+
+
+.green-block
+{
+    border: none;
+
+}
+    .green-block .button
+    {
+        background-color: #5bb139;
+    }
+    .green-block hr
+    {
+        border: 2px solid #5bb139;
+    }
+
