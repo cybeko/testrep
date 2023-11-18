@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize</title>
+    <style>
+      body
+      {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+</head>
+<body>
+  <div class="navbar">
+      <nav class="deep-purple darken-4" role="navigation">
+        <div class="col 12s container ">
+        <a class="brand-logo center ">Header</a>
+          <ul id="nav-mobile" class="sidenav ">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Please, help</a></li>
+            <li><a href="#">Info</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger "><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+      <nav class="deep-purple hide-on-small-only">
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Info</a></li>
+        </ul>
+      </nav>
+  </div>
+  <main style="height: 100%;">
+    <div class="row blue-grey" style="height: 100%;">
+        <aside class="hide-on-small-only deep-purple lighten-3 col s3" style="height: 100%;"></aside>
+        <section class=" col s12 m6 deep-purple lighten-4" style="height: 100%;"></section>
+        <aside class="hide-on-small-only col s3 deep-purple lighten-3" style="height: 100%;"></aside>
+    </div>
+  </main>
+  <footer class="deep-purple darken-2" style="height: 7vh;"></footer>
+  <script src="js/materialize.min.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+    });
+  </script>
+</body>
+</html>
