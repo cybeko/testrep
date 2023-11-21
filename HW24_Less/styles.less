@@ -1,0 +1,88 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+@bg-base: rgb(55, 140, 161);
+@bg-1: @bg-base + 180;
+@bg-2: @bg-base + 100;
+@bg-3: @bg-base + 80;
+.container
+{
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: @bg-base;
+}
+header
+{
+    width: 100%;
+    height: 10%;
+    background-color: @bg-base;
+
+}
+main
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+aside
+{
+    width: 20%;
+    height: 100%;
+    background-color: @bg-3;
+
+}
+section
+{
+    width: 80%;
+    height: 100%;
+    background-color: @bg-1;
+
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+    section h1
+    {
+        font-size: 3em;
+    }
+    section p
+    {
+        font-size: 1.3em;
+        margin-top: 40px;
+    }
+    section .photo-container
+    {
+        width: 80%;
+        height: 60%;
+        background-color: olive;
+        display: flex;
+    }
+    section .photo-container .section
+    {
+        width: 50%;
+        height: 100%;
+        background-color: @bg-2;
+        padding: 50px;
+        overflow-y: hidden;
+    }
+    section .photo-container .section img
+    {
+        width: 100%;
+        height: 100%;
+    }
+footer
+{
+    width: 100%;
+    height: 5%;
+    background-color: @bg-base;
+}
