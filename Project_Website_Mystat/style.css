@@ -493,7 +493,7 @@ main
             color: rgb(88, 88, 88);
         }
 
-    .homework-block, .tests-block, .payment-block
+    .homework-block, .tests-block, .payment-block, .chart-block
     {
         background-color: rgb(255, 255, 255);
         padding: 10px;
@@ -734,22 +734,61 @@ main
 {
     margin-top: 5%;
     width: 100%;
+    height: auto;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    /* background-color: rgb(182, 132, 72); */
+    background-color: rgb(182, 132, 72);
+    
 }
-    .block-container .block
+    .block-container .block, .block-container .side-container
     {
         background-color: rgb(255, 255, 255);
-        height: 85%;
-        width: 90%;
+        height: 100%;
+        width: 100%;
         border-radius: 1.5vw;
         display: flex;
         flex-direction: row;
         overflow: hidden;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     }
+    .block-container .side-container
+    {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        background-color: rgb(230, 255, 205);
+        align-items: center;
+    }
+    .block-container .side-container .block
+    {
+        width: 95%;
+        height: 20vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .block-container .side-container .completion-block
+    {
+        color: rgb(7, 184, 7);
+    }
+    .block-container .side-container .completion-block h1
+    {
+        font-size: 2.3em;
+    }
+        .block-container .side-container .completion-block .completion-bar
+        {
+            width: 80%;
+            height: 20px;
+            background-color:  rgb(7, 184, 7);
+            border-radius: 100vh;
+            margin: 20px;
+        }
+
+
     .block-container .block .pfp-section
     {
         width: 25%;
@@ -787,14 +826,11 @@ main
         {
             width: 230px;
             height: 230px;
-            border-radius: 100vh;
+            border-radius: 200vh;
             /* background-color: lightseagreen; */
             overflow: hidden;
             display: flex;
         }
-
-
-
 
     .block-container .block .field-section
     {
@@ -969,8 +1005,29 @@ textarea[name="comment"]
         margin-bottom: 10px;
     }
 }
+@media (max-width: 2000px)
+{
+    .block-container
+    {
+        flex-direction: column;
+    }
+    .block-container .side-container
+    {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+    .block-container .side-container .block
+    {
+        width: 100%;
+        margin: 10px;
+    }
+
+
+}
 @media (max-width: 1000px) 
 {
+   
     .block-container .block
     {
         flex-direction: column;
@@ -988,7 +1045,6 @@ textarea[name="comment"]
         {
             width: 100%;
             overflow: hidden;
-
         }
     
     .block-container .block .field-section .upper
