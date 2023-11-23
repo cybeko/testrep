@@ -1,6 +1,5 @@
 .container
 {
-    background-color: khaki;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
